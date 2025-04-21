@@ -23,13 +23,6 @@ import sqlite3
 # 3. git commit -m "Your message"
 # 4. git push
 ###########################################
- 
-def create_connection():
-    try:
-        con = sqlite3.connect('users.sqlite3')
-        return con
-    except Exception as e:
-        print(e)
 
 INPUT_STRING = """
 Enter the option:
@@ -45,6 +38,12 @@ Enter the option:
     10. Press any key to EXIT
 """
 
+def create_connection():
+    try:
+        con = sqlite3.connect('users.sqlite3')
+        return con
+    except Exception as e:
+        print(e)
 
 def create_table(con):
     CREATE_USER_TABLE_QUERY = """
