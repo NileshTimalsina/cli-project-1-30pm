@@ -4,6 +4,26 @@ import sqlite3
 # CLI => Command Line Interface
 # CRUD => Create, Read, Update, Delete
 # 80% - 90% CRUD
+
+# go to git bash
+#git config --global user.name "Nilesh Timalsina"
+#git config --global user.email "nileshtimalsina12@gmail.com"
+
+#first time
+#git init => git initialize
+#git status => if you want to check the status of files
+#git diff => if you want to check what are changes 
+#git add . =>Track all the files
+#git commit -m "Your message"
+#copy paste git code fro github
+
+#########################################
+# 1. change the code
+# 2. git add .
+# 3. git commit -m "Your message"
+# 4. git push
+###########################################
+ 
 def create_connection():
     try:
         con = sqlite3.connect('users.sqlite3')
